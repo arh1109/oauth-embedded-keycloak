@@ -1,0 +1,61 @@
+{
+  "realm": "demo",
+  "enabled": true,
+  "users": [
+    {
+      "username": "john@test.com",
+      "enabled": true,
+      "credentials": [
+        {
+          "type": "password",
+          "value": "test"
+        }
+      ],
+      "realmRoles": [
+        "user"
+      ]
+    },
+    {
+      "username": "mike@other.com",
+      "enabled": true,
+      "credentials": [
+        {
+          "type": "password",
+          "value": "test"
+        }
+      ],
+      "realmRoles": [
+        "user"
+      ]
+    }
+  ],
+  "roles": {
+    "realm": [
+      {
+        "name": "user",
+        "description": "User privileges"
+      },
+      {
+        "name": "admin",
+        "description": "Administrator privileges"
+      }
+    ]
+  },
+  "defaultRoles": [
+    "user"
+  ],
+  "clients": [
+    {
+      "clientId": "newClient",
+      "enabled": true,
+      "publicClient": true,
+      "redirectUris": [
+        "*"
+      ],
+      "standardFlowEnabled": true,
+      "webOrigins": [
+        "*"
+      ]
+    }
+  ]
+}
